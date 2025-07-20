@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Demo for Web Programming Class">
+  <meta name="author" content="Lawan Garba">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Programming Lecture Demo</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Web Programming</h1>
+    <p>Instructor: Lawan Garba | Northwest University </p>
+  </header>
+
+  <nav>
+    <a href="#about">About HTML</a> |
+    <a href="#students">Student List</a> |
+    <a href="#form">Registration Form</a> |
+    <a href="#media">Media</a> |
+    <a href="#map">Map</a> |
+    <a href="#footer">Footer</a>
+  </nav>
+
+  <main>
+
+    <!-- Semantic section about HTML -->
+    <section id="about">
+      <h2>What is HTML?</h2>
+      <p>HTML (HyperText Markup Language) is the standard language for creating webpages.</p>
+      <p><strong>HTML</strong> elements form the building blocks of web pages.</p>
+    </section>
+
+    <!-- Demonstrating different list types -->
+    <section>
+      <h2>Popular Technologies</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Steps to Create a Web Page</h3>
+      <ol>
+        <li>Create an HTML file</li>
+        <li>Write your content</li>
+        <li>Save and open in browser</li>
+      </ol>
+    </section>
+
+    <!-- Example table -->
+    <section id="students">
+      <h2>Student Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Matric No</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zainab Musa</td>
+            <td>CSC/21/1234</td>
+            <td>Computer Science</td>
+          </tr>
+          <tr>
+            <td>Bello Sani</td>
+            <td>CSC/21/4321</td>
+            <td>Computer Science</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- HTML Form Example -->
+    <section id="form">
+      <h2>Student Registration Form</h2>
+      <form enctype="multipart/form-data">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="matric">Matric Number:</label>
+        <input type="text" id="matric" name="matric"><br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+          <option value="cs">Computer Science</option>
+          <option value="se">Software Engineering</option>
+        </select><br><br>
+
+        <label>Select Skills:</label><br>
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+        <input type="checkbox" name="skills" value="JS"> JavaScript<br><br>
+
+        <!-- File upload field -->
+        <label for="photo">Upload Passport Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <!-- Article section -->
+    <article>
+      <h2>HTML vs CSS</h2>
+      <p>HTML is used for structuring content, while CSS is used for styling it.</p>
+    </article>
+
+    <!-- Aside section -->
+    <aside>
+      <h3>Tip</h3>
+      <p>Use the <code>&lt;label&gt;</code> tag to improve accessibility in forms.</p>
+    </aside>
+
+    <!-- Inline vs Block Elements -->
+    <section>
+      <h2>Block vs Inline Elements</h2>
+      <p>This is a <strong>block</strong> element (paragraph).</p>
+      <span>This is an inline element (span).</span>
+    </section>
+
+    <!-- Media section -->
+    <section id="media">
+      <h2>Media Examples</h2>
+
+      <h3>Image</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/HTML5_logo_and_wordmark.svg" alt="HTML Logo" width="200">
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video</h3>
+      <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Google Map embed -->
+    <section id="map">
+      <h2>Map of Northwest University </h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.927123624878!2d8.527983474259946!3d9.057951290999259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1053731bd52d113f%3A0x6f03d313e57b7a92!2sYusuf%20Maitama%20Sule%20University!5e0!3m2!1sen!2sng!4v1681039080466!5m2!1sen!2sng" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- External link -->
+    <section>
+      <h2>External Link</h2>
+      <p>Learn more about HTML from <a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a>.</p>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2025 Web Programming Class | Northwest University  Kano</p>
+  </footer>
+
+</body>
+</html>
